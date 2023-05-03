@@ -9,10 +9,11 @@ public class S1 {
         Random random = new Random();
         i = random.nextInt(2001);
         System.out.println(i);
-        
+
         int n; //2. Посчитать и сохранить в n номер старшего значащего бита выпавшего числа
         n = Integer.toBinaryString(i).length();
         System.out.println(n);
+
         List<Integer> m1 = new ArrayList<>(); //3. Найти все кратные n числа в диапазоне от i до Short.MAX_VALUE сохранить в массив m1
         for (int j = i; j < Short.MAX_VALUE; j++) {
             if (j % n == 0){
