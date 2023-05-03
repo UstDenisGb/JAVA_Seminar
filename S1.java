@@ -9,6 +9,7 @@ public class S1 {
         Random random = new Random();
         i = random.nextInt(2001);
         System.out.println(i);
+        
         int n; //2. Посчитать и сохранить в n номер старшего значащего бита выпавшего числа
         n = Integer.toBinaryString(i).length();
         System.out.println(n);
