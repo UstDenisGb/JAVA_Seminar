@@ -36,21 +36,17 @@ public class Seminar_06 {
 
 
 class mySet {
-//    private ArrayList<Integer> list = new ArrayList<>();
-   /* public boolean add(int num){
-        if (!list.contains(num)) {
+    if (!list.contains(num)) {
             list.add(num);
             return true;
         }
         return false;
     }
-   */
 
     static final Object OBJECT = new Object();
     private LinkedHashMap<Integer, Object> hashMap = new LinkedHashMap<>();
 
     public boolean add(int num){
-//        HashSet<Integer> integers;
         return hashMap.put(num, OBJECT) == null;
     }
 
@@ -73,15 +69,14 @@ class mySet {
 }
 
 class myTreeSet {
-//    private ArrayList<Integer> list = new ArrayList<>();
-   /* public boolean add(int num){
+
         if (!list.contains(num)) {
             list.add(num);
             return true;
         }
         return false;
     }
-   */
+   
     private Comparator<Integer> comparator;
 
     public myTreeSet(Comparator<Integer> comp) {
@@ -91,10 +86,8 @@ class myTreeSet {
     private TreeMap<Integer, Object> treeMap = new TreeMap<>(comparator);
 
     static final Object OBJECT = new Object();
-//    private TreeMap<Integer, Object> treeMap = new TreeMap<>(comparator);
 
     public boolean add(int num){
-//        HashSet<Integer> integers;
         return treeMap.put(num, OBJECT) == null;
     }
 
