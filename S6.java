@@ -9,13 +9,11 @@ public class Seminar_06 {
         @Override
         public int compare(Integer o1, Integer o2) {
             return o2-o1;
-//            return o1-o2;
         }
     };
 
     myTreeSet myTreeSet = new myTreeSet(comparator);
 
-//    mySet.add(7);
     for (int i = 0; i < 5; i++) {
         mySet.add(new Random().nextInt(10));
         myTreeSet.add(new Random().nextInt(10));
